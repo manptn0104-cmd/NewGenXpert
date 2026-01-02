@@ -25,11 +25,13 @@ const Contact = () => {
 
   try {
     const response = await fetch(
-      'https://script.google.com/macros/s/AKfycbxPSG6r9jGmfAEZ04ngNW7TXE4Qb7ESyyK18_rpypVN-RzJQjCnFVJ9dhG6JQIscvlB/exec', // paste Google Apps Script URL here
+      'https://script.google.com/macros/s/AKfycbxClhzL3GyNciQnQ28ToDSzioMqntngdYZXeXy6UTV-kvKw0GdZ3QlmWKjPYQSqlp5Z/exec', // paste Google Apps Script URL here
       {
         method: 'POST',
+        mode: "no-cors",
         headers: {
           'Content-Type': 'application/json',
+        
         },
         body: JSON.stringify(formData),
       }
