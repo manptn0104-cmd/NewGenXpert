@@ -5,6 +5,7 @@ import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Button } from './ui/button';
 import { useToast } from '../hooks/use-toast';
+import { axios } from 'axios';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -19,17 +20,45 @@ const Contact = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Mock submission
+  try {
+    const response = await fetch(
+      'https://script.google.com/macros/s/AKfycbxPSG6r9jGmfAEZ04ngNW7TXE4Qb7ESyyK18_rpypVN-RzJQjCnFVJ9dhG6JQIscvlB/exec', // paste Google Apps Script URL here
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error('Failed to submit');
+    }
+
     toast({
       title: 'Message Sent Successfully!',
       description: 'We will get back to you within 24 hours.',
     });
-    setFormData({ name: '', email: '', phone: '', company: '', message: '' });
-  };
 
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      company: '',
+      message: '',
+    });
+  } catch (error) {
+    toast({
+      title: 'Submission Failed',
+      description: 'Please try again later.',
+      variant: 'destructive',
+    });
+  }
+};
   const contactInfo = [
     {
       icon: <Mail className="w-6 h-6" />,
