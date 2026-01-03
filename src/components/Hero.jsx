@@ -25,11 +25,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
-        <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full mb-6 border border-white/20">
-          <Sparkles className="w-4 h-4 text-amber-400" />
-          <span className="text-sm text-white font-medium">Microsoft Partnership & Innovation</span>
-        </div>
-
+        
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
           Empowering Businesses Through
           <span className="block bg-gradient-to-r from-blue-400 via-cyan-300 to-teal-400 bg-clip-text text-transparent">
@@ -41,6 +37,10 @@ const Hero = () => {
           Delivering world-class IT services and solutions leveraging cutting-edge technologies
           to drive efficiency, scalability, and digital transformation.
         </p>
+       <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full mb-6 border border-white/20">
+          <Sparkles className="w-4 h-4 text-amber-400" />
+          <span className="text-sm text-white font-medium">Microsoft Partnership & Innovation</span>
+        </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button

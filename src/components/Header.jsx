@@ -39,7 +39,7 @@ const Header = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-         <img src={MainLogo} alt="NewGenXpert" className="h-28 md:h-30 lg:h-35 w-auto object-contain"  />
+         <img src={MainLogo} alt="NewGenXpert" className="h-16 md:h-20 lg:h-24 w-auto object-contain" />
          
 
           {/* Desktop Navigation */}
