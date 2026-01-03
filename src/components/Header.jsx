@@ -40,7 +40,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
         <div className="text-2xl font-bold bg-gradient-to-r from-slate-700 to-slate-900 bg-clip-text text-transparent">
-              NewGenXpert Technnolgies
+              NewGenXpert
             </div>
          
 
