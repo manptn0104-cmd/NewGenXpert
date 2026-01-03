@@ -5,7 +5,6 @@ import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Button } from './ui/button';
 import { useToast } from '../hooks/use-toast';
-import { axios } from 'axios';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -41,6 +40,7 @@ const Contact = () => {
       throw new Error('Failed to submit');
     }
 
+     alert("Message Sent Successfully! We will get back to you within 24 hours.");
     toast({
       title: 'Message Sent Successfully!',
       description: 'We will get back to you within 24 hours.',

@@ -1,0 +1,37 @@
+<svg version="1.1" id="NewGenXpert" xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 2000 600" xml:space="preserve">
+  <!-- Transparent background -->
+  <rect width="2000" height="600" fill="none"/>
+
+  <!-- NGX letters with gradient -->
+  <defs>
+    <linearGradient id="gradNGX" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00cfff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0047ab;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <text x="70" y="280" font-family="Arial, Helvetica, sans-serif" 
+        font-size="220" font-weight="bold" fill="url(#gradNGX)">
+    NGX
+  </text>
+
+  <!-- Circuit/tech effect -->
+  <g fill="none" stroke="#00cfff" stroke-width="6" stroke-linecap="round">
+    <line x1="0" y1="280" x2="250" y2="280"/>
+    <line x1="70" y1="230" x2="70" y2="280"/>
+    <circle cx="70" cy="280" r="12" fill="#00cfff"/>
+    <!-- Add more circuit lines if needed -->
+  </g>
+
+  <!-- Company Name -->
+  <text x="520" y="250" font-family="Arial, Helvetica, sans-serif" 
+        font-size="100" fill="#0047ab">
+    NewGenXpert
+  </text>
+  <text x="520" y="350" font-family="Arial, Helvetica, sans-serif" 
+        font-size="65" fill="#7f8c9a">
+    Technologies Pvt Ltd.
+  </text>
+</svg>
