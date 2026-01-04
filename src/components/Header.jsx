@@ -34,10 +34,10 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-transparent'
+        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-white/95 backdrop-blur-md shadow-md'
       }`}
     >
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
          <img src={MainLogo} alt="NewGenXpert" className="h-16 md:h-20 lg:h-24 w-auto object-contain" />
          

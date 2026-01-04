@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from './ui/button';
+import './styles/Ngxstyle.css';
 
 const Hero = () => {
   const scrollToSection = (sectionId) => {
@@ -13,11 +14,11 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden body-top-space mob-body-top-space"
       style={{
         backgroundImage: 'url(https://images.unsplash.com/photo-1644325349124-d1756b79dd42?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjQyMTd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwdHJhbnNmb3JtYXRpb258ZW58MHx8fHwxNzY2NDgyODM5fDA&ixlib=rb-4.1.0&q=85)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center'       
       }}
     >
       {/* Overlay */}
@@ -28,7 +29,7 @@ const Hero = () => {
           
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
           Empowering Businesses Through
-          <span className="block bg-gradient-to-r from-blue-400 via-cyan-300 to-teal-400 bg-clip-text text-transparent">
+          <span className="block bg-gradient-to-r from-blue-400 via-cyan-300 to-teal-400 bg-clip-text">
             Innovative Technology
           </span>
         </h1>

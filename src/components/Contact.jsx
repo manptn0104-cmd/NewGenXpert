@@ -65,22 +65,22 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email Us',
-      details: 'info@newgenxpert.com',
-      subDetails: 'support@newgenxpert.com',
+      details: 'info@newgenxpert.in',
+      subDetails: 'support@newgenxpert.in',
       gradient: 'from-blue-500 to-cyan-500',
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Call Us',
-      details: '+1 (555) 123-4567',
+      details: '+91 9939872359',
       subDetails: 'Mon-Fri 9AM-6PM',
       gradient: 'from-teal-500 to-emerald-500',
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Visit Us',
-      details: '123 Tech Park, Suite 100',
-      subDetails: 'Silicon Valley, CA 94025',
+      details: 'Mantri Alpyne',
+      subDetails: 'Uttrahalli, Bangalore - 560061',
       gradient: 'from-violet-500 to-purple-500',
     },
   ];

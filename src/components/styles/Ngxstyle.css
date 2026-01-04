@@ -1,0 +1,11 @@
+@media(min-width: 768px) {
+.body-top-space {
+top : 96px;
+}
+}
+
+@media(max-width: 767px) {
+.mob-body-top-space{
+top : 65px;
+} 
+}
