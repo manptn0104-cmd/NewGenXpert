@@ -35,7 +35,7 @@ const About = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            About NewGenXpert Technologies
+            About NewGenXperts Technologies
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-slate-400 to-slate-600 mx-auto mb-6"></div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
